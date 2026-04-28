@@ -1,0 +1,72 @@
+main{
+    color:brown;
+    font-size: 2rem;
+    display:flex;
+    
+}
+h2{
+    font-size: 3rem;
+}
+footer{
+    display: flex;
+    
+    height:30px;
+    background-color: aquamarine;
+}
+/* @keyframes myanimation{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: yellow;
+    }
+} 
+@keyframes my{
+    from{
+        background-color:bisque;
+    }
+    to{
+        background-color:rgb(174, 230, 174);
+    }
+} */
+body{
+    animation-name: my;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+header{
+    height: 40px;
+    background-color: rgb(243, 215, 215);
+    animation-name: myanimation;
+    animation-duration: 0.5s;
+     animation-delay: 1s; 
+    animation-iteration-count: infinite;
+}
+@media  (min-width:600px){
+    body{font-size: 18px;}
+    header h3{font-size: 2.5rem;}
+}
+@media  (min-width:768px){
+    main{
+        flex-direction: column-reverse;
+    }
+    article{
+        flex: 2;
+        padding-right: 20px;
+    }
+    header h3{font-size: 2.5rem;}
+}
+body.dark-mode{
+    background-color: black;
+    color:white;
+}
+body.dark-mode article{
+    background-color: black;
+    color:white;
+}
+#toggleDark{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
